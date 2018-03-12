@@ -22,10 +22,12 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+All global variables work as const (and probably need to be const) due to local storage.  Let does not allow primitive data types to be converted and JSON stringify breaks.  
+The for loops needed to be let and not const.
+Interestingly, the while loop allowed const to be used for the variable rando.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Template literal notation is much easier to comprehend and use.  I love that you don't need to add extra spaces.
